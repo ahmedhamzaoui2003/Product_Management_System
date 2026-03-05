@@ -1,4 +1,4 @@
-﻿namespace AllTheProjects.All_Projects.Product_Management
+﻿namespace Product_Management_System
 {
     partial class frmAddNewCategory
     {
@@ -183,6 +183,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAddNewCategory";
             this.Text = "AddNewCategory";
+            this.Load += new System.EventHandler(this.frmAddNewCategory_Load);
             this.gbListOfCategories.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

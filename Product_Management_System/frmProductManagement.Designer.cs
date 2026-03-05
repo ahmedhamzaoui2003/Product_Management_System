@@ -1,4 +1,4 @@
-﻿namespace AllTheProjects.All_Projects.Product_Management
+﻿namespace Product_Management_System
 {
     partial class frmProductManagement
     {

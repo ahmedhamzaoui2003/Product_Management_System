@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Product_Management_System;
 
-namespace AllTheProjects.All_Projects.Product_Management
+namespace Product_Management_System
 {
     public partial class frmProductManagement : Form
     {
