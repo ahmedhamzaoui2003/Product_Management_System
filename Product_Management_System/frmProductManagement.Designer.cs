@@ -38,7 +38,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAddCategory = new System.Windows.Forms.Button();
-            this.txtdMadeIn = new System.Windows.Forms.TextBox();
+            this.txtMadeIn = new System.Windows.Forms.TextBox();
             this.txtPriceProduct = new System.Windows.Forms.TextBox();
             this.txtNameProduct = new System.Windows.Forms.TextBox();
             this.txtCodeProduct = new System.Windows.Forms.TextBox();
@@ -47,7 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.cbCategories = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gbListOfProducts.SuspendLayout();
             this.gbDetailsInfo.SuspendLayout();
@@ -85,6 +85,7 @@
             this.ListOfProducts.Name = "ListOfProducts";
             this.ListOfProducts.Size = new System.Drawing.Size(336, 452);
             this.ListOfProducts.TabIndex = 0;
+            this.ListOfProducts.SelectedIndexChanged += new System.EventHandler(this.ListOfProducts_SelectedIndexChanged);
             // 
             // gbDetailsInfo
             // 
@@ -94,7 +95,7 @@
             this.gbDetailsInfo.Controls.Add(this.btnDelete);
             this.gbDetailsInfo.Controls.Add(this.btnClose);
             this.gbDetailsInfo.Controls.Add(this.btnAddCategory);
-            this.gbDetailsInfo.Controls.Add(this.txtdMadeIn);
+            this.gbDetailsInfo.Controls.Add(this.txtMadeIn);
             this.gbDetailsInfo.Controls.Add(this.txtPriceProduct);
             this.gbDetailsInfo.Controls.Add(this.txtNameProduct);
             this.gbDetailsInfo.Controls.Add(this.txtCodeProduct);
@@ -103,7 +104,7 @@
             this.gbDetailsInfo.Controls.Add(this.label5);
             this.gbDetailsInfo.Controls.Add(this.label4);
             this.gbDetailsInfo.Controls.Add(this.label3);
-            this.gbDetailsInfo.Controls.Add(this.cbCategory);
+            this.gbDetailsInfo.Controls.Add(this.cbCategories);
             this.gbDetailsInfo.Controls.Add(this.label2);
             this.gbDetailsInfo.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbDetailsInfo.Location = new System.Drawing.Point(366, 95);
@@ -144,6 +145,7 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClose
             // 
@@ -155,6 +157,7 @@
             this.btnClose.TabIndex = 14;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnAddCategory
             // 
@@ -168,12 +171,12 @@
             this.btnAddCategory.UseVisualStyleBackColor = false;
             this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
-            // txtdMadeIn
+            // txtMadeIn
             // 
-            this.txtdMadeIn.Location = new System.Drawing.Point(210, 316);
-            this.txtdMadeIn.Name = "txtdMadeIn";
-            this.txtdMadeIn.Size = new System.Drawing.Size(535, 36);
-            this.txtdMadeIn.TabIndex = 9;
+            this.txtMadeIn.Location = new System.Drawing.Point(210, 316);
+            this.txtMadeIn.Name = "txtMadeIn";
+            this.txtMadeIn.Size = new System.Drawing.Size(535, 36);
+            this.txtMadeIn.TabIndex = 9;
             // 
             // txtPriceProduct
             // 
@@ -241,13 +244,13 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Expiry Date ";
             // 
-            // cbCategory
+            // cbCategories
             // 
-            this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(210, 55);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(307, 36);
-            this.cbCategory.TabIndex = 1;
+            this.cbCategories.FormattingEnabled = true;
+            this.cbCategories.Location = new System.Drawing.Point(210, 55);
+            this.cbCategories.Name = "cbCategories";
+            this.cbCategories.Size = new System.Drawing.Size(307, 36);
+            this.cbCategories.TabIndex = 1;
             // 
             // label2
             // 
@@ -285,14 +288,14 @@
         private System.Windows.Forms.GroupBox gbListOfProducts;
         private System.Windows.Forms.GroupBox gbDetailsInfo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbCategory;
+        private System.Windows.Forms.ComboBox cbCategories;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCodeProduct;
-        private System.Windows.Forms.TextBox txtdMadeIn;
+        private System.Windows.Forms.TextBox txtMadeIn;
         private System.Windows.Forms.TextBox txtPriceProduct;
         private System.Windows.Forms.TextBox txtNameProduct;
         private System.Windows.Forms.Button btnAddCategory;
