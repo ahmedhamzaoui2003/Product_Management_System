@@ -27,5 +27,12 @@ namespace Product_Management_System
         {
 
         }
+
+        private void btnAddCategory_Click(object sender, EventArgs e)
+        {
+            Form fAddNewCategory = new frmAddNewCategory();
+            fAddNewCategory.ShowDialog();
+
+        }
     }
 }

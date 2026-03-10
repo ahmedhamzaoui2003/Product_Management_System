@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNewCategory));
             this.label1 = new System.Windows.Forms.Label();
             this.gbListOfCategories = new System.Windows.Forms.GroupBox();
+            this.ListOfCategories = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtCodeCategory = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ListOfCategories = new System.Windows.Forms.ListBox();
             this.gbListOfCategories.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +67,16 @@
             this.gbListOfCategories.TabIndex = 1;
             this.gbListOfCategories.TabStop = false;
             this.gbListOfCategories.Text = "List of Categories";
+            // 
+            // ListOfCategories
+            // 
+            this.ListOfCategories.FormattingEnabled = true;
+            this.ListOfCategories.ItemHeight = 28;
+            this.ListOfCategories.Location = new System.Drawing.Point(6, 31);
+            this.ListOfCategories.Name = "ListOfCategories";
+            this.ListOfCategories.Size = new System.Drawing.Size(336, 368);
+            this.ListOfCategories.TabIndex = 0;
+            this.ListOfCategories.SelectedIndexChanged += new System.EventHandler(this.ListOfCategories_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -96,6 +106,7 @@
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
@@ -158,15 +169,6 @@
             this.label2.Size = new System.Drawing.Size(188, 35);
             this.label2.TabIndex = 0;
             this.label2.Text = "Code Category";
-            // 
-            // ListOfCategories
-            // 
-            this.ListOfCategories.FormattingEnabled = true;
-            this.ListOfCategories.ItemHeight = 28;
-            this.ListOfCategories.Location = new System.Drawing.Point(6, 31);
-            this.ListOfCategories.Name = "ListOfCategories";
-            this.ListOfCategories.Size = new System.Drawing.Size(336, 368);
-            this.ListOfCategories.TabIndex = 0;
             // 
             // frmAddNewCategory
             // 

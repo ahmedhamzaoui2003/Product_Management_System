@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductManagement));
             this.label1 = new System.Windows.Forms.Label();
             this.gbListOfProducts = new System.Windows.Forms.GroupBox();
+            this.ListOfProducts = new System.Windows.Forms.ListBox();
             this.gbDetailsInfo = new System.Windows.Forms.GroupBox();
             this.dtpExpiryDate = new System.Windows.Forms.DateTimePicker();
             this.btnSave = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ListOfProducts = new System.Windows.Forms.ListBox();
             this.gbListOfProducts.SuspendLayout();
             this.gbDetailsInfo.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +76,15 @@
             this.gbListOfProducts.TabIndex = 1;
             this.gbListOfProducts.TabStop = false;
             this.gbListOfProducts.Text = "List of products";
+            // 
+            // ListOfProducts
+            // 
+            this.ListOfProducts.FormattingEnabled = true;
+            this.ListOfProducts.ItemHeight = 28;
+            this.ListOfProducts.Location = new System.Drawing.Point(6, 52);
+            this.ListOfProducts.Name = "ListOfProducts";
+            this.ListOfProducts.Size = new System.Drawing.Size(336, 452);
+            this.ListOfProducts.TabIndex = 0;
             // 
             // gbDetailsInfo
             // 
@@ -117,9 +126,9 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.Bisque;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Location = new System.Drawing.Point(78, 451);
+            this.btnSave.Location = new System.Drawing.Point(107, 462);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(195, 55);
+            this.btnSave.Size = new System.Drawing.Size(126, 55);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -129,9 +138,9 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Bisque;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelete.Location = new System.Drawing.Point(325, 451);
+            this.btnDelete.Location = new System.Drawing.Point(354, 462);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(195, 55);
+            this.btnDelete.Size = new System.Drawing.Size(126, 55);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -140,9 +149,9 @@
             // 
             this.btnClose.BackColor = System.Drawing.Color.Bisque;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.Location = new System.Drawing.Point(572, 451);
+            this.btnClose.Location = new System.Drawing.Point(601, 462);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(195, 55);
+            this.btnClose.Size = new System.Drawing.Size(126, 55);
             this.btnClose.TabIndex = 14;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -157,6 +166,7 @@
             this.btnAddCategory.TabIndex = 15;
             this.btnAddCategory.Text = "Add Category";
             this.btnAddCategory.UseVisualStyleBackColor = false;
+            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
             // txtdMadeIn
             // 
@@ -247,15 +257,6 @@
             this.label2.Size = new System.Drawing.Size(95, 28);
             this.label2.TabIndex = 0;
             this.label2.Text = "Category";
-            // 
-            // ListOfProducts
-            // 
-            this.ListOfProducts.FormattingEnabled = true;
-            this.ListOfProducts.ItemHeight = 28;
-            this.ListOfProducts.Location = new System.Drawing.Point(6, 52);
-            this.ListOfProducts.Name = "ListOfProducts";
-            this.ListOfProducts.Size = new System.Drawing.Size(336, 452);
-            this.ListOfProducts.TabIndex = 0;
             // 
             // frmProductManagement
             // 
